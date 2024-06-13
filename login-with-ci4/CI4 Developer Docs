@@ -1,0 +1,203 @@
+Installation
+In the folder above your project root:
+>> composer create-project codeigniter4/appstarter project-root
+------------ ALl An Important Commands -------------------------------------
+
+1. Create a Controller: 
+   >> php spark make:controller MyController
+
+2. Create a Model:
+   >> php spark make:model MyModel
+
+3. Create a View:
+   >> php spark make:view my_view
+
+4. Create a Migration:
+   >> php spark make:migration create_users_table
+
+5. Run Migrations:
+   >> php spark migrate
+
+6. Rollback Last Migration:   
+   >> php spark migrate:rollback
+
+7. Create a Seeder:
+   >> php spark make:seeder UsersSeeder
+
+8. Run Seeders:
+   >> php spark db:seed
+
+9. List Available Routes:
+   >> php spark routes
+10. Serve the Application Locally:   
+    >> php spark routes
+
+11. Clear Cache:
+    >> php spark cache:clear
+
+12. Generate Documentation for Routes:
+    >> php spark routes:discover
+
+13. Create a Filter:
+    >> php spark make:filter MyFilter
+
+14. Create a Namespace:
+    >>  php spark make:namespace MyNamespace
+
+15. Create a Command:
+    >> php spark make:command MyCommand
+
+16. Publish Core Files:
+    >> php spark publish
+
+17. Publish Assets:
+    >> php spark publish:assets
+
+18. Publish Migrations:
+    >> php spark publish:migrations
+
+19. Publish Models:
+    >> php spark publish:models
+
+20. Publish Views:
+    >> php spark publish:views
+
+21. Help (for Help on a Specific Command):
+    >> php spark help make:controller
+
+These are some of the most commonly used commands in CodeIgniter 4. You can access a full list of commands by running php spark list in your terminal. Each command has its specific usage and options, which you can explore by appending --help to the command. For example:
+
+>> php spark make:controller --help
+
+C:\Users\sanja\Documents\project-root>php spark make:controller --help
+
+CodeIgniter v4.5.2 Command Line Tool - Server Time: 2024-06-13 05:30:50 UTC+00:00
+
+Usage:
+  make:controller <name> [options]
+
+Description:
+  Generates a new controller file.
+
+Arguments:
+  name  The controller class name.
+
+Options:
+  --bare       Extends from CodeIgniter\Controller instead of BaseController.
+  --restful    Extends from a RESTful resource, Options: [controller, presenter]. Default: "controller".
+  --namespace  Set root namespace. Default: "APP_NAMESPACE".
+  --suffix     Append the component title to the class name (e.g. User => UserController).
+  --force      Force overwrite existing file.
+
+-----------------------------------------------
+--version
+
+CodeIgniter v4.5.2 Command Line Tool - Server Time: 2024-06-13 07:31:02 UTC+00:00
+
+Cache
+  cache:clear       Clears the current system caches.
+  cache:info        Shows file cache information in the current system.
+
+CodeIgniter
+  config:check      Check your Config values.
+  env               Retrieves the current environment, or set a new one.
+  filter:check      Check filters for a route.
+  help              Displays basic usage information.
+  list              Lists the available commands.
+  namespaces        Verifies your namespaces are setup correctly.
+  optimize          Optimize for production.
+  phpini:check      Check your php.ini values.
+  publish           Discovers and executes all predefined Publisher classes.
+  routes            Displays all routes.
+  serve             Launches the CodeIgniter PHP-Development Server.
+
+Database
+  db:create         Create a new database schema.
+  db:seed           Runs the specified seeder to populate known data into the database.
+  db:table          Retrieves information on the selected table.
+  migrate           Locates and runs all new migrations against the database.
+  migrate:refresh   Does a rollback followed by a latest to refresh the current state of the database.
+  migrate:rollback  Runs the "down" method for all migrations in the last batch.
+  migrate:status    Displays a list of all migrations and whether they've been run or not.
+
+Encryption
+  key:generate      Generates a new encryption key and writes it in an `.env` file.
+
+Generators
+  make:cell         Generates a new Controlled Cell file and its view.
+  make:command      Generates a new spark command.
+  make:config       Generates a new config file.
+  make:controller   Generates a new controller file.
+  make:entity       Generates a new entity file.
+  make:filter       Generates a new filter file.
+  make:migration    Generates a new migration file.
+  make:model        Generates a new model file.
+  make:scaffold     Generates a complete set of scaffold files.
+  make:seeder       Generates a new seeder file.
+  make:test         Generates a new test file.
+  make:validation   Generates a new validation file.
+
+Housekeeping
+  debugbar:clear    Clears all debugbar JSON files.
+  logs:clear        Clears all log files.
+
+Translation
+  lang:find         Find and save available phrases to translate.
+
+C:\Users\sanja\Documents\project-root>
+
+C:\Users\sanja\Documents\project-root>
+
+C:\Users\sanja\Documents\project-root>php spark --version
+
+CodeIgniter v4.5.2 Command Line Tool - Server Time: 2024-06-13 07:31:19 UTC+00:00
+
+Cache
+  cache:clear       Clears the current system caches.
+  cache:info        Shows file cache information in the current system. 
+
+CodeIgniter
+  config:check      Check your Config values.
+  env               Retrieves the current environment, or set a new one.
+  filter:check      Check filters for a route.
+  help              Displays basic usage information.
+  list              Lists the available commands.
+  namespaces        Verifies your namespaces are setup correctly.       
+  optimize          Optimize for production.
+  phpini:check      Check your php.ini values.
+  publish           Discovers and executes all predefined Publisher classes.
+  routes            Displays all routes.
+  serve             Launches the CodeIgniter PHP-Development Server.
+
+Database
+  db:create         Create a new database schema.
+  db:seed           Runs the specified seeder to populate known data into the database.
+  db:table          Retrieves information on the selected table.
+  migrate           Locates and runs all new migrations against the database.
+  migrate:refresh   Does a rollback followed by a latest to refresh the current state of the database.
+  migrate:rollback  Runs the "down" method for all migrations in the last batch.
+  migrate:status    Displays a list of all migrations and whether they've been run or not.
+
+Encryption
+  key:generate      Generates a new encryption key and writes it in an `.env` file.
+
+Generators
+  make:cell         Generates a new Controlled Cell file and its view.
+  make:command      Generates a new spark command.
+  make:config       Generates a new config file.
+  make:controller   Generates a new controller file.
+  make:entity       Generates a new entity file.
+  make:filter       Generates a new filter file.
+  make:migration    Generates a new migration file.
+  make:model        Generates a new model file.
+  make:scaffold     Generates a complete set of scaffold files.
+  make:seeder       Generates a new seeder file.
+  make:test         Generates a new test file.
+  make:validation   Generates a new validation file.
+
+Housekeeping
+  debugbar:clear    Clears all debugbar JSON files.
+  logs:clear        Clears all log files.
+
+Translation
+  lang:find         Find and save available phrases to translate.
